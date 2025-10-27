@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{APP_NAME}} 隱私權政策</title>
+<style>
+  :root { --fg:#222; --muted:#666; --bg:#faf9f7; --card:#ffffff; --b:#e8e5e1; --brand:#8b5cf6; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",PingFangTC,"Noto Sans TC","Helvetica Neue",Arial}
+  .wrap{max-width:860px;margin:24px auto;padding:24px}
+  .card{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+  h1{margin:0 0 6px;font-size:28px;letter-spacing:.5px}
+  h2{margin:24px 0 8px;font-size:20px}
+  p{margin:10px 0}
+  ul{margin:8px 0 16px 20px}
+  .muted{color:var(--muted)}
+  .footer{margin-top:18px;font-size:13px;color:var(--muted)}
+  code{background:#f2efe9;border:1px solid var(--b);padding:.15em .35em;border-radius:6px}
+  a{color:#2563eb;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .brand{display:inline-block;background:var(--brand);color:white;border-radius:999px;padding:2px 10px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>{{APP_NAME}} 隱私權政策 <span class="brand">Privacy</span></h1>
+      <p class="muted">最近更新：<span id="d"></span></p>
+
+      <p>感謝您使用 <strong>{{APP_NAME}}</strong>（以下稱「本 App」）。本頁面說明我們如何處理您的資料。{{DEVELOPER_NAME}}（以下稱「我們」）非常重視您的隱私。</p>
+
+      <h2>我們蒐集哪些資料？</h2>
+      <p><strong>本 App 不會蒐集、儲存或分享可辨識個人的資料。</strong>您在 App 內的閱讀、播放等操作皆在裝置本地進行，不會上傳到伺服器。</p>
+
+      <ul>
+        <li>無帳號註冊、無登入流程。</li>
+        <li>無第三方分析（例如 Google Analytics、Firebase Analytics）。</li>
+        <li>無廣告追蹤（IDFA/追蹤器）。</li>
+        <li>音訊播放與經文內容皆在本地處理。</li>
+      </ul>
+
+      <h2>需要的權限</h2>
+      <p>本 App 可能需要下列權限以提供功能：</p>
+      <ul>
+        <li><strong>媒體/音訊</strong>：播放經文音檔。</li>
+      </ul>
+      <p>上述權限僅用於對應功能，不會用於其他目的。</p>
+
+      <h2>第三方服務</h2>
+      <p>本 App 不內建第三方追蹤工具。若未來新增第三方服務，我們會於本頁更新並清楚告知。</p>
+
+      <h2>兒少隱私</h2>
+      <p>我們不會有意識地蒐集 13 歲以下兒童的個人資料。</p>
+
+      <h2>資料保存</h2>
+      <p>由於不蒐集個資，亦無遠端保存。App 內的偏好設定與暫存資料僅存於您的裝置，可於刪除 App 時一併移除。</p>
+
+      <h2>聯絡我們</h2>
+      <p>如對本政策有任何疑問，歡迎以電子郵件聯繫：<a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+
+      <h2>政策更新</h2>
+      <p>我們可能因功能或法規變更而更新本頁。重大變更將於本頁公告最新版本。</p>
+
+      <p class="footer">© <span id="y"></span> {{DEVELOPER_NAME}}. All rights reserved.</p>
+    </div>
+  </div>
+<script>
+  const d=new Date(); 
+  document.getElementById('d').textContent = d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+  document.getElementById('y').textContent = d.getFullYear();
+</script>
+</body>
+</html>
