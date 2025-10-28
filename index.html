@@ -1,80 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>隱私權政策｜佛經－直排注音</title>
 
-  <!-- 可有可無：避免搜尋引擎索引（若不需要可刪除這行） -->
-  <meta name="robots" content="noindex,nofollow" />
-
-  <!-- Open Graph（分享預覽，可依需要調整） -->
+  <!-- SEO / 分享 -->
+  <meta name="description" content="佛經－直排注音 隱私權政策：不蒐集、不追蹤、不傳輸個人資料。提供聯絡方式與內容權利聲明，符合 App Store 審核要求。" />
   <meta property="og:title" content="隱私權政策｜佛經－直排注音" />
+  <meta property="og:description" content="不蒐集、不追蹤、不傳輸個人資料。提供聯絡方式與內容權利聲明。" />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="zh_TW" />
+  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
 
   <style>
-    :root{
-      --bg:#faf7f2; --fg:#222; --card:#fff; --muted:#666; --link:#0a84ff;
-      --radius:12px; --shadow:0 6px 28px rgba(0,0,0,.06);
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted:#6b7280;
+      --card:#f8fafc;
+      --link:#2563eb;
+      --border:#e5e7eb;
+      --accent:#f59e0b;
     }
-    html,body{height:100%}
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
-      margin:0; padding:24px; line-height:1.75; color:var(--fg); background:var(--bg);
-    }
-    .container{max-width:860px; margin:0 auto; background:var(--card); padding:28px 22px; border-radius:var(--radius); box-shadow:var(--shadow)}
-    h1{margin:0 0 6px; font-size:28px}
-    h2{margin-top:28px; font-size:20px}
-    p{margin:10px 0}
-    ul{padding-left:20px}
-    .meta{color:var(--muted); margin-bottom:8px}
-    a{color:var(--link); text-decoration:none} a:hover{text-decoration:underline}
-    .btnrow a{display:inline-block; padding:10px 14px; border-radius:10px; background:#f2f2f7; margin-right:10px}
-    .small{font-size:13px; color:var(--muted)}
+    * { box-sizing: border-box; }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,"Noto Sans TC","PingFang TC","Heiti TC","Microsoft JhengHei","Apple LiGothic",sans-serif; }
+    a { color:var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { padding: 28px 20px 0; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 28px 20px 48px; }
+    .card { background: var(--card); border:1px solid var(--border); border-radius:16px; padding: 20px; }
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    h2 { font-size: 20px; margin: 28px 0 10px; }
+    h3 { font-size: 18px; margin: 22px 0 8px; }
+    p,li { color: var(--fg); }
+    .muted { color: var(--muted); }
+    .kvs { display: grid; grid-template-columns: 140px 1fr; gap: 8px 16px; border:1px solid var(--border); border-radius: 12px; padding: 12px; background:#fff; }
+    .kvs div:nth-child(odd){ color: var(--muted); }
+    .note { border-left: 4px solid var(--accent); background:#fff7ed; padding:10px 12px; border-radius:8px; }
+    footer { margin-top: 40px; padding-top: 16px; border-top:1px solid var(--border); color: var(--muted); font-size: 14px; }
+    nav { margin: 12px 0 0; font-size: 14px; }
+    nav a { margin-right: 12px; }
+    ul { padding-left: 20px; }
+    .toc { margin: 10px 0 0; padding-left: 18px; }
+    .toc li { margin: 4px 0; }
+    code { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; background:#f3f4f6; padding:2px 6px; border-radius:6px; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header class="wrap">
     <h1>隱私權政策</h1>
-    <div class="meta">App：佛經－直排注音　｜　開發者：張峻瑋　｜　聯絡：<a href="mailto:ik012345@gmail.com">ik012345@gmail.com</a></div>
-
-    <p>感謝您使用「佛經－直排注音」（以下稱「本 App」）。我們非常重視您的隱私。本政策說明本 App 如何處理使用者資料。</p>
-
-    <h2>我們蒐集哪些資料？</h2>
-    <p><strong>本 App 不主動蒐集任何可識別個人身分之資料</strong>（如姓名、Email、電話、裝置定位等）。</p>
-    <ul>
-      <li>離線運作：經文與設定皆在本機處理，不會上傳到伺服器。</li>
-      <li>權限使用：僅使用播放音訊所需之權限，不存取相簿、相機或定位。</li>
-    </ul>
-
-    <h2>第三方服務與追蹤</h2>
-    <ul>
-      <li><strong>不內建第三方分析或廣告 SDK</strong>（例如 Google Analytics、AdMob）。</li>
-      <li>不使用第三方追蹤、指紋或跨網站追蹤技術。</li>
-    </ul>
-
-    <h2>資料分享與揭露</h2>
-    <p>本 App 不會與任何第三方分享您的個人資料，亦不會對外出售或出借資料。</p>
-
-    <h2>兒童隱私</h2>
-    <p>本 App 內容為經文閱讀學習用途，不含需要蒐集兒童個資之功能。</p>
-
-    <h2>資料安全</h2>
-    <p>因不蒐集個資，所有內容皆於本機呈現。若您透過 Email 與我們聯繫，您寄送的內容將僅用於回覆與技術支援。</p>
-
-    <h2>您的權利</h2>
-    <p>如需查詢、修正或刪除您在與我們聯繫過程中提供的資料，請 Email：<a href="mailto:ik012345@gmail.com">ik012345@gmail.com</a>。</p>
-
-    <h2>政策更新</h2>
-    <p>我們可能因功能調整而更新本政策。新版將公布於此頁，並以「最後更新」日期標示。</p>
-
-    <p class="small">最後更新：2025-10-27</p>
-
-    <div class="btnrow">
+    <p class="muted">適用於「佛經－直排注音」App</p>
+    <nav>
+      <a href="./index.html">隱私權政策</a>
       <a href="./support.html">支援頁面</a>
       <a href="./marketing.html">行銷頁面</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="card">
+      <h2>簡要說明</h2>
+      <p class="note"><strong>我們不蒐集、不追蹤、不出售任何個人資料。</strong> 本 App 不要求註冊、不建立帳號、不使用第三方分析或廣告 SDK，也不會將資料傳輸到我們的伺服器。所有經文內容、播放與設定皆在裝置上本機處理。</p>
+
+      <h2 id="who">開發者與聯絡</h2>
+      <div class="kvs" aria-labelledby="who">
+        <div>App 名稱</div><div>佛經－直排注音</div>
+        <div>開發者</div><div>張峻瑋</div>
+        <div>聯絡 Email</div>
+        <div><a href="mailto:ik012345@gmail.com?subject=%E4%BD%9B%E7%B6%93%E2%80%94%E7%9B%B4%E6%8E%92%E6%B3%A8%E9%9F%B3%20%E6%94%AF%E6%8F%B4%E5%95%8F%E9%A1%8C">ik012345@gmail.com</a></div>
+        <div>支援頁面</div><div><a href="./support.html">support.html</a></div>
+        <div>行銷頁面</div><div><a href="./marketing.html">marketing.html</a></div>
+      </div>
+
+      <h2 id="scope">涵蓋範圍</h2>
+      <p>本政策說明您在使用「佛經－直排注音」iOS/Android 應用程式時，我們如何處理資料與內容權利事項。若日後新增雲端同步、帳號或分析功能，將會更新本頁並於 App 內提示。</p>
+
+      <h2 id="data">資料使用聲明</h2>
+      <ul>
+        <li><strong>不蒐集個資：</strong>不要求姓名、電話、Email、裝置識別碼等。亦不建立使用者帳號。</li>
+        <li><strong>不追蹤：</strong>不植入第三方追蹤器，不進行跨站或跨 App 追蹤。</li>
+        <li><strong>不傳輸到伺服器：</strong>經文閱讀、播放進度、字體與排版設定均在本機處理。</li>
+        <li><strong>無第三方分析/廣告 SDK：</strong>目前不整合任何分析或廣告服務。</li>
+        <li><strong>權限使用：</strong>一般閱讀不需額外權限。若未來加入音訊下載或檔案匯入，僅於功能啟用時向您請求必要權限。</li>
+        <li><strong>兒童與青少年：</strong>內容為佛教經典文本，未含不當元素；我們不蒐集兒童個資。</li>
+      </ul>
+
+      <h2 id="rights">內容權利聲明</h2>
+      <p>本 App 所呈現之佛教經典文本，係採用公領域或合理授權來源，僅作為閱讀學習之用。若您為權利人且認為內容不宜公開或授權有疑義，請來信告知，我們將於確認後迅速處理（下架、改版或標示出處）。</p>
+      <ul>
+        <li><strong>經文文本：</strong>以傳統經典為主，一般視為公領域；必要時我們會補充或調整出處標示。</li>
+        <li><strong>字型資源：</strong>App 內字型僅用於經文顯示；我們已依其授權條款使用，若有疑義請來信。</li>
+        <li><strong>音訊／配樂：</strong>如包含誦讀或配樂，僅於獲得權利人同意或適用授權條款下使用；若您是相關權利人並欲調整呈現方式，亦請來信。</li>
+      </ul>
+
+      <h2 id="security">資料安全</h2>
+      <p>目前功能均在本機執行，無伺服器端保存。若未來新增雲端功能（如跨裝置同步），我們將在啟用前提供清楚的告知與同意流程。</p>
+
+      <h2 id="your-rights">您的權利</h2>
+      <ul>
+        <li>您可隨時刪除 App；本機設定與快取將一併移除。</li>
+        <li>由於我們不留存您的個資，無帳號可供匯出或刪除申請。</li>
+        <li>若您對內容權利、授權或隱私有任何疑問，請寄信至 <a href="mailto:ik012345@gmail.com">ik012345@gmail.com</a>。</li>
+      </ul>
+
+      <h2 id="changes">政策更新</h2>
+      <p>本政策可能因功能調整或法規變更而更新；重大變更將於本頁公告，並在 App 內提示。</p>
+
+      <h2 id="legal">法務與聯絡</h2>
+      <ul>
+        <li><strong>著作權聲明：</strong>© <span id="y"></span> 張峻瑋。保留一切權利。</li>
+        <li><strong>聯絡方式：</strong><a href="mailto:ik012345@gmail.com?subject=%E6%8A%95%E8%A8%B4%E6%88%96%E6%AC%8A%E5%88%A9%E5%95%8F%E9%A1%8C">ik012345@gmail.com</a></li>
+        <li><strong>服務地：</strong>本 App 主要在台灣地區提供與維運（如適用）。</li>
+      </ul>
+
+      <footer>
+        <div>版本：1.0　｜　生效日：<time datetime="2025-10-28">2025-10-28</time></div>
+        <div>© <span id="y2"></span> 張峻瑋　佛經－直排注音</div>
+      </footer>
     </div>
-  </div>
+
+    <section class="wrap" style="padding-left:0;padding-right:0;">
+      <h3>快速導覽</h3>
+      <ul class="toc">
+        <li><a href="#who">開發者與聯絡</a></li>
+        <li><a href="#scope">涵蓋範圍</a></li>
+        <li><a href="#data">資料使用聲明</a></li>
+        <li><a href="#rights">內容權利聲明</a></li>
+        <li><a href="#security">資料安全</a></li>
+        <li><a href="#your-rights">您的權利</a></li>
+        <li><a href="#changes">政策更新</a></li>
+        <li><a href="#legal">法務與聯絡</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    // 顯示今年
+    const y = new Date().getFullYear();
+    document.getElementById('y').textContent = y;
+    document.getElementById('y2').textContent = y;
+  </script>
 </body>
 </html>
