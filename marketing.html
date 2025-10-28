@@ -1,124 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>佛經－直排注音｜產品介紹</title>
-
-  <!-- SEO / 分享 -->
-  <meta name="description" content="佛經－直排注音：直排閱讀、注音輔助、章節導覽、可選誦讀與速度調整，專注、清爽、無追蹤。" />
-  <meta property="og:title" content="佛經－直排注音｜產品介紹" />
-  <meta property="og:description" content="直排閱讀．無追蹤．專注學習佛典。" />
-  <meta property="og:type" content="website" />
-  <meta name="format-detection" content="telephone=no,email=no,address=no" />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-
+  <meta name="description" content="沉浸式直排閱讀，注音輔助、章節導覽、無廣告與無追蹤。">
   <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #111827;
-      --muted:#6b7280;
-      --card:#f8fafc;
-      --link:#2563eb;
-      --border:#e5e7eb;
-      --accent:#f59e0b;
-    }
-    * { box-sizing: border-box; }
-    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,"Noto Sans TC","PingFang TC","Heiti TC","Microsoft JhengHei","Apple LiGothic",sans-serif; }
-    a { color:var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header { padding: 28px 20px 0; }
-    .wrap { max-width: 880px; margin: 0 auto; padding: 28px 20px 48px; }
-    .card { background: var(--card); border:1px solid var(--border); border-radius:16px; padding: 20px; }
-    h1 { font-size: 28px; margin: 0 0 6px; }
-    h2 { font-size: 22px; margin: 28px 0 10px; }
-    h3 { font-size: 18px; margin: 22px 0 8px; }
-    p,li { color: var(--fg); }
-    .muted { color: var(--muted); }
-    .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; background:#fff7ed; border:1px solid var(--border); }
-    .features { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
-    .ft { background:#fff; border:1px solid var(--border); border-radius:12px; padding:12px 14px; }
-    .cta { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
-    .cta a.button { display:inline-block; border:1px solid var(--border); background:#111827; color:#fff; padding:10px 14px; border-radius:10px; }
-    .cta .hint { color:var(--muted); font-size:14px; }
-    nav { margin: 12px 0 0; font-size: 14px; }
-    nav a { margin-right: 12px; }
-    ul { padding-left: 20px; }
-    footer { margin-top: 40px; padding-top: 16px; border-top:1px solid var(--border); color: var(--muted); font-size: 14px; }
-    @media (max-width: 720px){ .features{ grid-template-columns: 1fr; } }
+    :root{--bg:#0b1020;--card:#11172b;--text:#e8eefc;--muted:#a8b3cf;--accent:#93c5fd;--border:#21304d}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:40px auto;padding:0 20px}
+    h1{font-size:28px;margin:0 0 8px}
+    h2{font-size:22px;margin:24px 0 12px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+    .hero{background:linear-gradient(135deg,#0b132b 0%,#172554 100%);border:1px solid var(--border);border-radius:16px;padding:20px}
+    .btn{display:inline-block;background:#1e293b;border:1px solid var(--border);color:#e5edff;padding:10px 14px;border-radius:10px}
+    .footer{margin-top:36px;font-size:14px;color:var(--muted)}
+    ul{padding-left:20px;margin:8px 0}
   </style>
 </head>
 <body>
-  <header class="wrap">
-    <h1>佛經－直排注音</h1>
-    <p class="muted">直排閱讀 · 注音輔助 · 專注學習佛典</p>
-    <nav>
-      <a href="./index.html">隱私權政策</a>
-      <a href="./support.html">支援頁面</a>
-      <a href="./marketing.html">行銷頁面</a>
-    </nav>
-  </header>
-
   <main class="wrap">
-    <div class="card">
-      <span class="badge">簡介</span>
-      <h2>專為佛典設計的閱讀體驗</h2>
-      <p>「佛經－直排注音」提供沉浸的直排版面與注音輔助，搭配章節導覽與（可用時）誦讀播放，讓學習與誦念更專注、順暢。</p>
+    <section class="hero">
+      <h1>佛經－直排注音</h1>
+      <p class="muted">沉浸式直排閱讀｜注音輔助｜章節導覽｜無廣告與無追蹤</p>
+      <p><span class="btn">即將上架 App Store</span></p>
+    </section>
 
-      <div class="features" aria-label="主要特色">
-        <div class="ft">
-          <h3>直排版面</h3>
-          <p>採傳統直排閱讀，支援安全區調整、字級與行距微調，長時間閱讀更舒適。</p>
+    <section>
+      <h2>核心特色</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>直排閱讀</h3>
+          <p>採傳統直排，視覺清楚、安定，長時間閱讀更舒適。</p>
         </div>
-        <div class="ft">
+        <div class="card">
           <h3>注音輔助</h3>
-          <p>顯示注音以輔助誦讀與學習（依實作支援的字體與章節為準）。</p>
+          <p>標示注音，輔助誦讀與學習（依字體與章節支援範圍而定）。</p>
         </div>
-        <div class="ft">
+        <div class="card">
           <h3>章節導覽</h3>
-          <p>快速切換章節，並可上一章／下一章流暢閱讀。</p>
+          <p>快速選書、選章，並可上一章／下一章流暢瀏覽。</p>
         </div>
-        <div class="ft">
-          <h3>誦讀與速度</h3>
-          <p>若章節含音檔，可播放誦讀並調整速度；亦可選擇不改變音高。</p>
+        <div class="card">
+          <h3>誦讀播放</h3>
+          <p>若章節含對應音檔，可直接播放誦讀。<strong>目前不提供變速或保留音高選項</strong>。</p>
         </div>
-        <div class="ft">
-          <h3>離線與低干擾</h3>
-          <p>閱讀於本機處理，無廣告、無追蹤，啟動即讀。</p>
+        <div class="card">
+          <h3>無廣告、無追蹤</h3>
+          <p>不蒐集個資、不建立個人檔案；詳見隱私權政策。</p>
         </div>
-        <div class="ft">
-          <h3>權利尊重</h3>
-          <p>經文內容以公領域或授權來源為準，若有權利疑義可依支援頁指引聯絡處理。</p>
+        <div class="card">
+          <h3>簡潔上手</h3>
+          <p>開啟即讀；以閱讀為中心，不以干擾功能堆疊。</p>
         </div>
       </div>
+    </section>
 
-      <h2>下載與價格</h2>
-      <div class="cta">
-        <!-- 上架後把 href 換成 App Store 連結 -->
-        <a class="button" href="#" aria-disabled="true">即將上架 App Store</a>
-        <span class="hint">實際價格與系統需求以 App Store 顯示為準。</span>
-      </div>
-
-      <h2>為什麼選擇我們？</h2>
+    <section class="card">
+      <h2>為何選擇我們？</h2>
       <ul>
-        <li><strong>專心：</strong>無多餘干擾，專注於經文。</li>
-        <li><strong>易讀：</strong>直排＋注音，入門者也能順利誦讀。</li>
-        <li><strong>尊重：</strong>重視內容權利，提供清楚的下架／改版流程。</li>
-        <li><strong>安心：</strong>不蒐集、不追蹤、不上傳個人資料。</li>
+        <li><strong>專注</strong>：更少干擾，專注在經文。</li>
+        <li><strong>清晰</strong>：直排字距、標點位置經過調整，提升易讀性。</li>
+        <li><strong>尊重</strong>：內容來源以公領域或授權檔為準，敬請指正。</li>
       </ul>
+    </section>
 
-      <h2>支援與隱私</h2>
-      <p>遇到問題？請到 <a href="./support.html">支援頁面</a> 取得疑難排解與聯絡方式。隱私相關請見 <a href="./index.html">隱私權政策</a>。</p>
+    <section class="card">
+      <h2>聯絡與政策</h2>
+      <p>開發者：張峻瑋　｜　Email：<a href="mailto:ik012345@gmail.com">ik012345@gmail.com</a></p>
+      <p><a class="btn" href="./index.html">隱私權政策</a>　<a class="btn" href="./support.html">支援頁面</a></p>
+    </section>
 
-      <footer>
-        <div>版本：1.0　｜　更新日：<time datetime="2025-10-28">2025-10-28</time></div>
-        <div>© <span id="y"></span> 張峻瑋　佛經－直排注音</div>
-      </footer>
-    </div>
+    <p class="footer">© 2025 張峻瑋。頁面僅作介紹；實際功能以 App 內顯示為準。</p>
   </main>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
