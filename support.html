@@ -1,40 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>支援｜佛經－直排注音</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>支援頁面｜佛經－直排注音</title>
+
+  <!-- SEO / 分享 -->
+  <meta name="description" content="佛經－直排注音 支援與常見問題：如何調整字級與排版、直排閱讀、音檔播放、疑難排解、聯絡方式與內容權利處理流程。" />
+  <meta property="og:title" content="支援頁面｜佛經－直排注音" />
+  <meta property="og:description" content="常見問題、操作教學、疑難排解與聯絡方式。" />
+  <meta property="og:type" content="website" />
+  <meta name="format-detection" content="telephone=no,email=no,address=no" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
   <style>
-    body{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif; margin:0; padding:24px; line-height:1.75; color:#222; background:#faf7f2;}
-    .container{max-width:860px; margin:0 auto; background:#fff; padding:28px 22px; border-radius:12px; box-shadow:0 6px 28px rgba(0,0,0,.06);}
-    h1{margin:0 0 6px; font-size:28px}
-    h2{margin-top:28px; font-size:20px}
-    a{color:#0a84ff; text-decoration:none} a:hover{text-decoration:underline}
-    .meta{color:#666; margin-bottom:8px}
-    .btnrow a{display:inline-block; padding:10px 14px; border-radius:10px; background:#f2f2f7; margin-right:10px}
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted:#6b7280;
+      --card:#f8fafc;
+      --link:#2563eb;
+      --border:#e5e7eb;
+      --accent:#22c55e;
+    }
+    * { box-sizing: border-box; }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,"Noto Sans TC","PingFang TC","Heiti TC","Microsoft JhengHei","Apple LiGothic",sans-serif; }
+    a { color:var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { padding: 28px 20px 0; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 28px 20px 48px; }
+    .card { background: var(--card); border:1px solid var(--border); border-radius:16px; padding: 20px; }
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    h2 { font-size: 20px; margin: 28px 0 10px; }
+    h3 { font-size: 18px; margin: 22px 0 8px; }
+    p,li { color: var(--fg); }
+    .muted { color: var(--muted); }
+    .note { border-left: 4px solid var(--accent); background:#ecfdf5; padding:10px 12px; border-radius:8px; }
+    footer { margin-top: 40px; padding-top: 16px; border-top:1px solid var(--border); color: var(--muted); font-size: 14px; }
+    nav { margin: 12px 0 0; font-size: 14px; }
+    nav a { margin-right: 12px; }
+    ul { padding-left: 20px; }
+    .kvs { display: grid; grid-template-columns: 140px 1fr; gap: 8px 16px; border:1px solid var(--border); border-radius: 12px; padding: 12px; background:#fff; }
+    .kvs div:nth-child(odd){ color: var(--muted); }
+    details { background:#fff; border:1px solid var(--border); border-radius:12px; padding:12px 14px; margin:10px 0; }
+    details>summary { cursor:pointer; font-weight:600; }
+    code { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; background:#f3f4f6; padding:2px 6px; border-radius:6px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>支援 / Support</h1>
-    <div class="meta">App：佛經－直排注音　｜　開發者：張峻瑋</div>
+  <header class="wrap">
+    <h1>支援頁面</h1>
+    <p class="muted">適用於「佛經－直排注音」App</p>
+    <nav>
+      <a href="./index.html">隱私權政策</a>
+      <a href="./support.html">支援頁面</a>
+      <a href="./marketing.html">行銷頁面</a>
+    </nav>
+  </header>
 
-    <h2>常見問題</h2>
-    <ol>
-      <li>首次開啟後，版面偶爾被裁到一點點？請更新到最新版本，若仍有情況，重進章節或回報給我們。</li>
-      <li>無法播放音檔？請確認該章節是否有對應音檔，或檢查裝置音量／靜音。</li>
-    </ol>
+  <main class="wrap">
+    <div class="card">
+      <h2>聯絡與服務資訊</h2>
+      <div class="kvs">
+        <div>開發者</div><div>張峻瑋</div>
+        <div>聯絡 Email</div><div><a href="mailto:ik012345@gmail.com?subject=%E4%BD%9B%E7%B6%93%E2%80%94%E7%9B%B4%E6%8E%92%E6%B3%A8%E9%9F%B3%20%E6%94%AF%E6%8F%B4%E7%94%B3%E8%AB%8B">ik012345@gmail.com</a></div>
+        <div>回覆時間</div><div>一般情況 3–5 個工作天（例假日順延）</div>
+        <div>資料與隱私</div><div><a href="./index.html">隱私權政策（不蒐集、不追蹤）</a></div>
+      </div>
 
-    <h2>聯絡我們</h2>
-    <p>Email：<a href="mailto:ik012345@gmail.com">ik012345@gmail.com</a></p>
+      <h2 id="quickstart">快速開始</h2>
+      <ol>
+        <li>於主畫面選擇「書本」 → 選擇「章節」。</li>
+        <li>進入內文後可橫向滑動（直排由右至左），或使用「上一章／下一章」。</li>
+        <li>點擊「播放」按鈕可同步誦讀（若該章有對應音檔）。</li>
+        <li>在 App 內可調整字級、速度與行距（依你的設定頁／按鍵安排）。</li>
+      </ol>
 
-    <h2>版本資訊</h2>
-    <p>目前版本：1.0（iOS）</p>
+      <h2 id="faq">常見問題（FAQ）</h2>
 
-    <div class="btnrow">
-      <a href="./index.html">回到隱私權政策</a>
-      <a href="./marketing.html">前往行銷頁面</a>
+      <details>
+        <summary>字被裁切一點點，頂端好像被吃掉？</summary>
+        <div>
+          <p>已知現象：首次從「章節清單」開啟某些章節時，極少數機型頂端可能被裁切少量像素。暫時解法：</p>
+          <ul>
+            <li>在該章畫面點一次「上一章」再返回本章；或回上一頁再重新進入，即可恢復正常。</li>
+            <li>確保系統字體縮放為預設值，並關閉「螢幕放大」等輔助縮放後重開 App。</li>
+          </ul>
+          <p>我們已在最新版排版流程中加入額外的版面穩定處理；若仍遇到，請寄信回報您的裝置型號與系統版本。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>怎麼調整字體大小／行距／速度？</summary>
+        <div>
+          <p>在閱讀畫面或設定頁可調整字級與播放速度。若播放速度與音檔不同步，建議先關閉「音檔跟隨速度」，再逐步微調。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>播放沒有聲音／找不到音檔？</summary>
+        <div>
+          <ul>
+            <li>確認裝置音量未靜音，且「鈴聲／靜音」撥桿未關閉。</li>
+            <li>非每個章節都含音檔；若無對應音檔，播放按鈕會提示找不到。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>為何是直排？可以改橫排嗎？</summary>
+        <div>
+          <p>本 App 以傳統佛經閱讀體驗為優先，預設採直排。未來若加入橫排模式，將於版本資訊公告。</p>
+        </div>
+      </details>
+
+      <h2 id="troubleshoot">疑難排解</h2>
+      <ul>
+        <li><strong>版面跑位或卡頓：</strong>返回上一頁再進入、或完全關閉 App 後重啟。</li>
+        <li><strong>更新後異常：</strong>嘗試重新安裝（資料僅在本機，無雲端帳號）。</li>
+        <li><strong>特定章節顯示錯誤：</strong>截圖並來信告知章節名稱與錯誤描述。</li>
+      </ul>
+
+      <h2 id="compat">相容性與需求</h2>
+      <p>實際系統需求以 App Store 之頁面為準；目前開發與測試以 iOS 15 以上之版本為主。</p>
+
+      <h2 id="rights">內容權利／下架請求</h2>
+      <p>若您為任何經文、字型或音檔的權利人，且認為本 App 的呈現方式不符合授權或需調整，請寄信至 <a href="mailto:ik012345@gmail.com">ik012345@gmail.com</a>，信中附：</p>
+      <ul>
+        <li>主張之素材與權利證明（或可連結之官方說明）；</li>
+        <li>希望處理方式（下架、改版、補標示等）。</li>
+      </ul>
+      <p>我們將於收到完整資訊後儘速處理。</p>
+
+      <h2 id="refund">購買與退款</h2>
+      <p>若涉及付費項目，退款依 <strong>Apple App Store</strong> 規範處理：請至 Apple 的「問題回報」頁面申請；我們無法直接介入付款流程。</p>
+
+      <h2 id="privacy">隱私</h2>
+      <p>本 App <strong>不蒐集、不追蹤、不傳輸</strong> 任何個資。詳見：<a href="./index.html">隱私權政策</a>。</p>
+
+      <footer>
+        <div>版本：1.0　｜　更新日：<time datetime="2025-10-28">2025-10-28</time></div>
+        <div>© <span id="y"></span> 張峻瑋　佛經－直排注音</div>
+      </footer>
     </div>
-  </div>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
